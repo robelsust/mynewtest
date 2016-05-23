@@ -2,8 +2,8 @@
 
 require_once('../../../../wp-config.php');
 
-$db = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
-mysql_select_db(DB_NAME);
+$db = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD) or die('Can not connect to server');
+mysql_select_db(DB_NAME) or die('can not connect to database');
 
 $email = $_POST['email'];
 $sql_email = mysql_real_escape_string($email);

@@ -1,5 +1,6 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
+ini_set('display_errors', 1);
 $email = $_POST['email'];
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	$err++;
