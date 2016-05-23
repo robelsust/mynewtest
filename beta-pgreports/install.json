@@ -1,0 +1,11 @@
+[
+    {
+       "icon" : "elephant.png",
+       "group_id" : "databases",
+       "order" : 100,
+       "name" : "PostgreSQL",
+       "type" : "link",
+       "id" : "postgres",
+       "uri" : "rspsql"
+    }
+]
